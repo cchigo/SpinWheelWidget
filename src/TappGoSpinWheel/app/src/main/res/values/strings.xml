@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TappGo Spin Wheel</string>
+    <string name="widget_description">Spin the wheel to win prizes!</string>
+    <string name="try_again_in">Try again in: %1$s</string>
+    <string name="total_spins">Total spins: %1$d</string>
+</resources>

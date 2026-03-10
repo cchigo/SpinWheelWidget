@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/img_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="32dp"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/img_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="28dp"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/img_spin_btn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/spin_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_spin_bg"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="20" />
+
+    <Button
+        android:id="@+id/btn_spin"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn_spin_bg"
+        android:text="Spin"
+        android:visibility="visible"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+</FrameLayout>
