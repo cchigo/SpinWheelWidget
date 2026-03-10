@@ -1,0 +1,17 @@
+{
+  "name": "react-native-spin-wheel-widget",
+  "version": "1.0.0",
+  "description": "React Native wrapper for TappGo SpinWheel Android widget",
+  "main": "index.js",
+  "type": "commonjs",
+  "files": [
+    "index.js",
+    "android"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.60.0"
+  },
+  "keywords": ["react-native", "android", "spin-wheel"],
+  "author": "",
+  "license": "ISC"
+}

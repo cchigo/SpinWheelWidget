@@ -1,0 +1,8 @@
+TappSpinDemo/node_modules
+TappSpinDemo/android/.gradle
+TappSpinDemo/android/build
+TappSpinDemo/android/app/build
+TappSpinDemo/ios
+src/**/.gradle
+src/**/build
+.DS_Store

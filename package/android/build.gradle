@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace 'com.spinwheelwidget'
+    compileSdkVersion 36
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 36
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    // TappGo SpinWheel native library
+    implementation(name: 'spinwheelwidget', ext: 'aar')
+
+    // React Native
+    implementation 'com.facebook.react:react-native:+'
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3"
+
+    // AndroidX core
+    implementation "androidx.core:core-ktx:1.17.0"
+    implementation "androidx.appcompat:appcompat:1.7.1"
+    implementation "androidx.activity:activity:1.12.4"
+    implementation "androidx.annotation:annotation:1.9.1"
+
+    // UI - ConstraintLayout + Material (Theme.Material3 comes from here)
+    implementation "androidx.constraintlayout:constraintlayout:2.2.1"
+    implementation "com.google.android.material:material:1.13.0"
+
+    // Network - OkHttp used by NetworkManager in the .aar
+    implementation "com.squareup.okhttp3:okhttp:4.12.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.12.0"
+
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.8.7"
+}
